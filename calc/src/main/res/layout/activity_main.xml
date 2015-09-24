@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+    <EditText
+        android:id = "@+id/Edit1"
+        android:layout_width="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_margin="10dp"
+        android:hint = "숫자1" />
+    <EditText
+        android:id = "@+id/Edit2"
+        android:layout_width="wrap_content"
+        android:layout_height ="wrap_content"
+        android:hint = "숫자2"
+        android:layout_above="@+id/BtnAdd"
+        android:layout_alignLeft="@+id/Edit1"
+        android:layout_alignStart="@+id/Edit1" />
+
+    <Button
+        android:id = "@+id/BtnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="더하기"
+        android:layout_above="@+id/BtnSub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id = "@+id/BtnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="빼기"
+        android:layout_above="@+id/BtnMul"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id = "@+id/BtnMul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="곱하기"
+        android:layout_above="@+id/BtnDiv"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id = "@+id/BtnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나누기"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/BtnAdd"
+        android:layout_alignEnd="@+id/BtnAdd" />
+    <Button
+        android:id = "@+id/BtnDiv0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나머지 값"
+        android:layout_below="@+id/BtnDiv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id = "@+id/TextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor = "#FF0000"
+        android:text  = "계산 결과 : "
+        android:layout_below="@+id/BtnDiv"
+        android:layout_alignLeft="@+id/Edit2"
+        android:layout_alignStart="@+id/Edit2"
+        android:layout_marginTop="63dp" />
+    </RelativeLayout>
