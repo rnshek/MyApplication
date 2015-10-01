@@ -1,69 +1,69 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-     tools:context=".MainActivity">
+    android:orientation="vertical">
+
     <EditText
-        android:id = "@+id/Edit1"
+        android:id="@+id/Edit1"
         android:layout_width="wrap_content"
-        android:layout_height ="wrap_content"
-        android:layout_margin="10dp"
-        android:hint = "숫자1" />
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/Edit1"
+        android:text=""
+        />
     <EditText
-        android:id = "@+id/Edit2"
+        android:id="@+id/Edit2"
         android:layout_width="wrap_content"
-        android:layout_height ="wrap_content"
-        android:hint = "숫자2"
-        android:layout_above="@+id/BtnAdd"
-        android:layout_alignLeft="@+id/Edit1"
-        android:layout_alignStart="@+id/Edit1" />
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/Edit2"
+        android:text=""
+        />
 
     <Button
-        android:id = "@+id/BtnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="더하기"
-        android:layout_above="@+id/BtnSub"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/btnAdd"
+        android:text="@string/strBtnAdd"
+        android:layout_margin="5dp"
+        ></Button>
     <Button
-        android:id = "@+id/BtnSub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="빼기"
-        android:layout_above="@+id/BtnMul"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/btnSub"
+        android:text="@string/strBtnSub"
+        android:layout_margin="5dp"
+        ></Button>
     <Button
-        android:id = "@+id/BtnMul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="곱하기"
-        android:layout_above="@+id/BtnDiv"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/btnMul"
+        android:text="@string/strBtnMul"
+        android:layout_margin="5dp"
+        ></Button>
     <Button
-        android:id = "@+id/BtnDiv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="나누기"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/BtnAdd"
-        android:layout_alignEnd="@+id/BtnAdd" />
+        android:id="@+id/btnDiv"
+        android:text="@string/strBtnDiv"
+        android:layout_margin="5dp"
+        ></Button>
     <Button
-        android:id = "@+id/BtnDiv0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="나머지 값"
-        android:layout_below="@+id/BtnDiv"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/btnRes"
+        android:text="@string/strBtnRes"
+        android:layout_margin="5dp"
+        ></Button>
+
     <TextView
-        android:id = "@+id/TextResult"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/TextResult"
         android:textSize="30dp"
-        android:textColor = "#FF0000"
-        android:text  = "계산 결과 : "
-        android:layout_below="@+id/BtnDiv"
-        android:layout_alignLeft="@+id/Edit2"
-        android:layout_alignStart="@+id/Edit2"
-        android:layout_marginTop="63dp" />
-    </RelativeLayout>
+        android:textColor="#FF0000"
+        android:layout_margin="5dp"
+        android:text="@string/textResult"
+        />
+</LinearLayout>
