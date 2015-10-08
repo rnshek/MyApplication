@@ -33,7 +33,6 @@
         android:layout_width="70dp"
         android:id="@+id/BtnNum0"
         android:text="0"/>
-
     <Button
         android:layout_column="1"
         android:layout_row="2"
