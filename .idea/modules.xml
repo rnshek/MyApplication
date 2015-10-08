@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication3.iml" filepath="$PROJECT_DIR$/MyApplication3.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication333.iml" filepath="$PROJECT_DIR$/MyApplication333.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication777.iml" filepath="$PROJECT_DIR$/MyApplication777.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyApplication888.iml" filepath="$PROJECT_DIR$/MyApplication888.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/button/button.iml" filepath="$PROJECT_DIR$/button/button.iml" />
       <module fileurl="file://$PROJECT_DIR$/calc/calc.iml" filepath="$PROJECT_DIR$/calc/calc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calc2/calc2.iml" filepath="$PROJECT_DIR$/calc2/calc2.iml" />
       <module fileurl="file://$PROJECT_DIR$/image/image.iml" filepath="$PROJECT_DIR$/image/image.iml" />
     </modules>
   </component>
