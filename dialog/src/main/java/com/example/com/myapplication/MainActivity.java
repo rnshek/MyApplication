@@ -2,8 +2,8 @@ package com.example.com.myapplication;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.Menu;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                dialogView = (View) View.inflate(MainActivity.this, R.layout.dialog1, null);
+                dialogView = View.inflate(MainActivity.this, R.layout.dialog1, null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
                 dlgEdtName = (EditText) dialogView.findViewById(R.id.dlgEdt1);
                 dlgEdtEmail = (EditText) dialogView.findViewById(R.id.dlgEdt2);
@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Toast toast = new Toast(MainActivity.this);
-                                toastView = (View) View.inflate(MainActivity.this,
+                                toastView = View.inflate(MainActivity.this,
                                         R.layout.toast1, null);
                                 toastText = (TextView) toastView.findViewById(R.id.toastText1);
-                                toastText.setText("취소했습니다.");
+                                toastText.setText("취소했습니다!");
                                 Display display = ((WindowManager) getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
                                 int xOffset = (int) (Math.random() * display.getWidth());
                                 int yOffset = (int) (Math.random() * display.getHeight());
