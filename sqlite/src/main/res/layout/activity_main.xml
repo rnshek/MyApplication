@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/edtNumber"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인원:"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoText="false"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/edtName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/edtNumber"
+        android:layout_alignStart="@+id/edtNumber"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:text="초기"
+        android:id="@+id/btnInit"
+        android:layout_below="@+id/edtNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:id="@+id/btnInsert"
+        android:layout_alignTop="@+id/btnInit"
+        android:layout_toRightOf="@+id/btnInit"
+        android:layout_toEndOf="@+id/btnInit" />
+
+    <Button
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:id="@+id/btnModify"
+        android:layout_alignTop="@+id/btnInsert"
+        android:layout_toRightOf="@+id/btnInsert"
+        android:layout_toEndOf="@+id/btnInsert" />
+
+    <Button
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        android:id="@+id/btnDelete"
+        android:layout_alignTop="@+id/btnModify"
+        android:layout_toRightOf="@+id/btnModify"
+        android:layout_toEndOf="@+id/btnModify" />
+
+    <Button
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:text="조회"
+        android:id="@+id/btnSelect"
+        android:layout_alignTop="@+id/btnDelete"
+        android:layout_toRightOf="@+id/btnDelete"
+        android:layout_toEndOf="@+id/btnDelete" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNameResult"
+        android:layout_below="@+id/btnInit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnModify"
+        android:layout_alignEnd="@+id/btnModify"
+        android:background="#ffdb65" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNumberResult"
+        android:layout_below="@+id/btnDelete"
+        android:layout_toRightOf="@+id/edtNameResult"
+        android:layout_alignRight="@+id/btnSelect"
+        android:layout_alignEnd="@+id/btnSelect"
+        android:layout_alignParentBottom="true"
+        android:background="#ffdb65" />
+
+</RelativeLayout>

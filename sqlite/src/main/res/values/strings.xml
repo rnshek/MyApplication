@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">가수 그룹관리 DB</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
