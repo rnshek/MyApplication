@@ -11,6 +11,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.user.myapplication.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
